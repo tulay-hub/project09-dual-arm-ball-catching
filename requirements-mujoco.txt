@@ -1,0 +1,11 @@
+# Verified with Python 3.12; install PyTorch separately for your CPU/CUDA platform.
+torch==2.11.0
+mujoco==3.11.0
+numpy==2.3.1
+scipy==1.17.0
+trimesh==4.11.1
+rtree==1.4.1
+tensordict==0.14.2
+rsl-rl-lib==5.4.1
+pillow==12.3.0
+glfw==2.10.0

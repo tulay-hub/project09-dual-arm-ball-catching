@@ -1,0 +1,296 @@
+{
+  "status": "v2_training_managed",
+  "task": "external_throw_catch_then_single_ball_alternating_toss_and_catch",
+  "robot_urdf": "assets/lkls73_o2_dual_arm_o6_description/urdf/lkls73_o2_dual_arm_o6_description_portable.urdf",
+  "joint_order": [
+    "Left_Shoulder_Pitch_Joint",
+    "Left_Shoulder_Roll_Joint",
+    "Left_Shoulder_Yaw_Joint",
+    "Left_Elbow_Pitch_Joint",
+    "Left_Wrist_Yaw_Joint",
+    "Left_Wrist_Pitch_Joint",
+    "Left_Wrist_Roll_Joint",
+    "Right_Shoulder_Pitch_Joint",
+    "Right_Shoulder_Roll_Joint",
+    "Right_Shoulder_Yaw_Joint",
+    "Right_Elbow_Pitch_Joint",
+    "Right_Wrist_Yaw_Joint",
+    "Right_Wrist_Pitch_Joint",
+    "Right_Wrist_Roll_Joint",
+    "lh_thumb_cmc_yaw",
+    "lh_thumb_cmc_pitch",
+    "lh_index_mcp_pitch",
+    "lh_middle_mcp_pitch",
+    "lh_ring_mcp_pitch",
+    "lh_pinky_mcp_pitch",
+    "rh_thumb_cmc_yaw",
+    "rh_thumb_cmc_pitch",
+    "rh_index_mcp_pitch",
+    "rh_middle_mcp_pitch",
+    "rh_ring_mcp_pitch",
+    "rh_pinky_mcp_pitch"
+  ],
+  "mimic_joints": [
+    {
+      "name": "lh_thumb_ip",
+      "joint": "lh_thumb_cmc_pitch",
+      "multiplier": "1.86",
+      "offset": "0"
+    },
+    {
+      "name": "lh_index_dip",
+      "joint": "lh_index_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "lh_middle_dip",
+      "joint": "lh_middle_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "lh_ring_dip",
+      "joint": "lh_ring_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "lh_pinky_dip",
+      "joint": "lh_pinky_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "rh_thumb_ip",
+      "joint": "rh_thumb_cmc_pitch",
+      "multiplier": "1.86",
+      "offset": "0"
+    },
+    {
+      "name": "rh_index_dip",
+      "joint": "rh_index_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "rh_middle_dip",
+      "joint": "rh_middle_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "rh_ring_dip",
+      "joint": "rh_ring_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    },
+    {
+      "name": "rh_pinky_dip",
+      "joint": "rh_pinky_mcp_pitch",
+      "multiplier": "0.89",
+      "offset": "0"
+    }
+  ],
+  "fixed_base": true,
+  "camera": {
+    "type": "body_mounted_overhead_rgbd",
+    "pose_status": "body_mount_translation_yaw_and_rgbd_runtime_verified",
+    "proposed_rate_hz": [
+      60,
+      120
+    ],
+    "timestamp_required": true,
+    "mount_link": "Base_Link",
+    "local_pose": {
+      "position_m": [
+        0.36,
+        0,
+        0.65
+      ],
+      "quaternion_xyzw_opengl": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "validation_report": "logs/body_camera_mount_v6/camera_mount_probe.json",
+    "hardware_proposal": "config/camera_gemini305_proposal.json"
+  },
+  "proposed_rates_hz": {
+    "physics": 120,
+    "servo": 200,
+    "perception": [
+      60,
+      120
+    ],
+    "residual_policy": [
+      50,
+      100
+    ]
+  },
+  "proposed_ball": {
+    "diameter_m": [
+      0.04,
+      0.04
+    ],
+    "mass_kg": [
+      0.016399,
+      0.016399
+    ],
+    "status": "configured_simulation_40mm_constant_density"
+  },
+  "held_ball_constraint": "physical_contacts_only_for_final_acceptance",
+  "initial_simulator": "Isaac Lab 3.0 EA / Isaac Sim 6.1, runtime import/contact/vision commissioned",
+  "secondary_simulator": "MuJoCo, optional independent dynamics/control debug",
+  "receiver_strategy": "front/side RGB-D ballistic tracking, velocity-aligned receiving palm, up to 20 percent visual preclosure then tactile full closure and tilted retention",
+  "dynamics_profile": "mirror_left_simulation_assumption",
+  "training": {
+    "stage": "offcenter_mesh_catch_retention",
+    "status": "paused_by_user",
+    "run_dir": "logs/ppo_catch/v2/mixed_all_from1345_20261019_134853",
+    "pid": null,
+    "planned_iterations": 10000,
+    "num_envs": 256,
+    "steps_per_env": 64,
+    "save_interval": 5,
+    "camera_resolution": [
+      192,
+      192
+    ],
+    "validation_report": "reports/speed_optimization_20261014.json",
+    "continuous_toss_included": false,
+    "resume_checkpoint": "logs/ppo_catch/v2/mixed_all_from1345_20261019_134853/segment_0001/model_1445.pt",
+    "exposure_tracking_version": "per_env_physics_clock_v2",
+    "completed_updates_before_resume": 1346,
+    "diagnostic_report": "reports/mixed_curriculum_active.json",
+    "reward_and_noise_settings_changed": true,
+    "auto_resume": false,
+    "completed_updates": 1446,
+    "legacy_checkpoint_compatible": false,
+    "new_task_name": "LKLS73CameraCatchXYTimingResidual-v4",
+    "reward_version": 4,
+    "physics_hz": 120,
+    "from_scratch": false,
+    "closure_trigger": "any physical hand-ball contact peak >0.03N; camera occlusion cannot block closure",
+    "name": "v2",
+    "last_verified_checkpoint": "logs/ppo_catch/v2/mixed_all_from1345_20261019_134853/segment_0001/model_1445.pt",
+    "sampling_optimization": "batch_host_state_gpu_pixel_compaction_analytic_fit_v1",
+    "next_response_profile": "fast",
+    "policy_version": "v4",
+    "observation_dim": 100,
+    "action_dim": 14,
+    "validation_every_updates": 200,
+    "first_validation_after_updates": 1446,
+    "validation_episodes": 1024,
+    "validation_seeds": [
+      11011,
+      12012,
+      13013,
+      14014
+    ],
+    "final_test_seeds": [
+      21021,
+      22022,
+      23023,
+      24024
+    ],
+    "new_version_updates_start_at": 0,
+    "migration_parent_completed_updates": 1908,
+    "pid_role": "supervisor",
+    "runtime_state": "reports/active_training.json",
+    "migration_parent_checkpoint": "logs/ppo_catch/v1/optimized_20261014_184417/model_stopped_1907.pt",
+    "action_contract_revision": "v4_xy200_predictive_v1",
+    "xy_action_hard_clip": true,
+    "xy_residual_scale_m_per_unit": 0.02,
+    "validation_protocol": "v4_xy200_predictive_pose_finish_mixed_all_full_distribution_v3",
+    "xy_residual_hard_limit_m": 0.2,
+    "tracking_profile": "predictive",
+    "grip_profile": "pose_finish",
+    "curriculum_level": 2,
+    "initial_curriculum_level": 2,
+    "curriculum_user_override": true,
+    "session_dir": "logs/ppo_catch/v2/mixed_all_from1345_20261019_134853",
+    "training_profile": "mixed_all",
+    "learning_rate": 5e-05,
+    "learning_rate_schedule": "fixed",
+    "num_learning_epochs": 3,
+    "training_direction_target": {
+      "front": 0.35,
+      "left_side": 0.25,
+      "right_side": 0.4
+    },
+    "receiving_right_hand_probability": 0.6,
+    "plateau_patience": 8,
+    "min_new_updates_before_plateau": 2000,
+    "optimizer_reset_on_this_continuation": false,
+    "reward_settings_changed": false,
+    "perception_augmentation": {
+      "measurement_std_m": [
+        0.0005,
+        0.0005,
+        0.001
+      ],
+      "drop_probability": 0.02
+    },
+    "previous_branch_completed_updates": 1787,
+    "last_runtime_verification_at": "2026-10-19T13:51:54.922988+08:00",
+    "optimizer_restored_on_continuation": true,
+    "continuation_validation_pending": true,
+    "curriculum_mode": "mixed_all",
+    "curriculum_level_probabilities": {
+      "0": 0.3333333333333333,
+      "1": 0.3333333333333333,
+      "2": 0.3333333333333333
+    },
+    "perception_augmentation_scope": "training_level_2_episodes_only",
+    "stopped_at": "2026-10-19T14:42:22.184553+08:00"
+  },
+  "throw": {
+    "version": "front_side_v2",
+    "front_probability": 0.5,
+    "receiver_side_probability": 0.5,
+    "front_launch_x_m": [
+      0.74,
+      0.9
+    ],
+    "side_launch_abs_y_m": [
+      0.52,
+      0.65
+    ],
+    "launch_z_m": [
+      0.96,
+      1.12
+    ],
+    "flight_s": [
+      0.34,
+      0.46
+    ],
+    "minimum_horizontal_distance_m": 0.26,
+    "minimum_horizontal_speed_m_s": 0.75,
+    "whole_ball_camera_frustum_required": true
+  },
+  "preclosure": {
+    "time_window_s": 0.2,
+    "palm_alignment_error_max_m": 0.04,
+    "camera_age_max_s": 0.1,
+    "maximum_fraction": 0.45,
+    "full_closure": "physical contact starts closure from actual current finger pose",
+    "fraction_reference": "remaining closure from prepared hand pose"
+  },
+  "controller_response": {
+    "profile": "fast",
+    "validation_report": "reports/response_fix_20261015.json",
+    "drive_limits_unchanged": true,
+    "policy_weights_updated": false,
+    "tracking_profile": "predictive",
+    "tracking_revision": "position_priority_early_arrival_contact_filter_v2",
+    "xy_limit_per_axis_m": 0.2,
+    "xy_slew_m_per_step": 0.01,
+    "grip_profile": "pose_finish",
+    "grip_revision": "finish_planned_receiving_pose_v1",
+    "contact_settling_window_s": 0.12,
+    "contact_pose_correction_max_rad": 0.35
+  }
+}

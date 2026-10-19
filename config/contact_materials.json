@@ -1,0 +1,52 @@
+{
+  "status": "original_collision_material_binding_pending_runtime_validation",
+  "units": "SI",
+  "o6_rubber_contact": {
+    "static_friction": 1.2,
+    "dynamic_friction": 1.0,
+    "restitution": 0.02,
+    "friction_combine_mode": "max",
+    "restitution_combine_mode": "min",
+    "apply_to": "existing palm and finger collision meshes; no added rubber plates or cuboids",
+    "exclude": "arm and wrist metal; visual material unchanged",
+    "note": "Simulation friction values applied directly to original collision shapes. Coefficients have not been measured on the real rubber and ball."
+  },
+  "ball_initial_material": {
+    "static_friction": 0.8,
+    "dynamic_friction": 0.6,
+    "restitution": 0.02,
+    "friction_combine_mode": "max",
+    "restitution_combine_mode": "min"
+  },
+  "sensitivity_sweep": [
+    {
+      "static_friction": 0.8,
+      "dynamic_friction": 0.6
+    },
+    {
+      "static_friction": 1.2,
+      "dynamic_friction": 1.0
+    },
+    {
+      "static_friction": 1.5,
+      "dynamic_friction": 1.2
+    }
+  ],
+  "mujoco_optional_initial_contact": {
+    "geom_friction": [
+      1.0,
+      0.005,
+      0.0001
+    ],
+    "condim": 4,
+    "note": "MuJoCo friction means sliding, torsional, rolling; second and third entries have length units. This is an independent starting point, not a direct conversion of PhysX static/dynamic coefficients. Pair contact settings need explicit validation."
+  },
+  "validation_required": [
+    "Rubber material binding resolves on collision shapes after import.",
+    "Both hand-ball contact pairs use intended friction and restitution combine modes.",
+    "Ball remains held without weld or forced ball pose updates.",
+    "Opening fingers actually releases the ball at the expected velocity.",
+    "Check excessive sticking, release delay, penetration and solver stability."
+  ],
+  "runtime_evidence": "reports/mesh_tracking_v3_validation.json"
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.git/
+.venv/
+.env
+logs/
+MUJOCO_LOG.TXT
+assets/generated/mujoco/

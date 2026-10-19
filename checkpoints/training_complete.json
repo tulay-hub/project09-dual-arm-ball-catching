@@ -1,0 +1,9 @@
+{
+  "iterations_this_run": 100,
+  "completed_updates": 1446,
+  "actor_parameter_abs_change": 55.022374112159014,
+  "transitions": 23752960,
+  "episodes": 11449,
+  "successes": 7399,
+  "stage": "offcenter_mesh_catch_retention"
+}

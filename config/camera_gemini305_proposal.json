@@ -1,0 +1,64 @@
+{
+  "status": "geometrically_checked_proposal_not_applied_to_running_training",
+  "camera": "Orbbec Gemini 305",
+  "official_source": "https://www.orbbec.com/gemini-305/",
+  "checked_date_china": "2026-10-12",
+  "official_operating_range_m": [
+    0.04,
+    1.0
+  ],
+  "operating_upper_note": "official specifies 100cm+; plan within 1m",
+  "official_ideal_range_m": [
+    0.07,
+    0.5
+  ],
+  "precision_condition": "spatial precision <=1% at 50cm, 1280x800, central 90%x90% ROI; not a 1m guarantee",
+  "real_camera_stream_recommendation": {
+    "depth": [
+      848,
+      480,
+      60
+    ],
+    "color": [
+      1280,
+      800,
+      60
+    ],
+    "note": "each profile listed on official page; verify simultaneous profiles, timestamps and alignment on the actual device"
+  },
+  "mount_link": "Base_Link",
+  "position_in_link_m": [
+    0.3,
+    0,
+    0.35
+  ],
+  "quaternion_in_link_xyzw_opengl": [
+    0,
+    0,
+    0.7071067811865476,
+    0.7071067811865476
+  ],
+  "world_position_at_current_base_m": [
+    0.3,
+    0,
+    1.6
+  ],
+  "wide_sensor_axis": "robot left-right direction; 90deg optical roll",
+  "catch_ball_axial_distance_m": 0.67,
+  "catch_ball_straight_distance_m": 0.6972804313904127,
+  "support_pole_height_m": 0.24,
+  "support_crossbar_length_m": 0.325,
+  "validation": "4242 trajectory samples: external flight 0.37/0.40/0.43s, +-20mm goals; hand-to-hand flights 0.30/0.40/0.45s; ball radius28mm",
+  "highest_ball_center_m": 1.31182759875,
+  "estimated_min_frustum_sphere_clearance_m": 0.0287,
+  "frustum_assumption": "pinhole, conservative H85 V62, rotated wide axis to robot Y; 60fps mode FOV needs actual calibration",
+  "current_sim_note": "ordinary square192 pinhole has H/V73.74; requires camera height1.65m for >20mm margin with same trajectories; do not simply apply Gemini mount without changing/calibrating optics",
+  "training_unchanged": {
+    "num_envs": 256,
+    "resolution": [
+      192,
+      192
+    ],
+    "mount": "current verified old extrinsics"
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lkls73_o2_dual_arm_o6_description</name>
+  <version>0.1.0</version>
+  <description>LKLS73 O2 dual arms with left and right LinkerHand O6 hands.</description>
+  <maintainer email="mengfanjiwork@163.com">ubuntu</maintainer>
+  <license>TODO: Confirm upstream model licenses</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

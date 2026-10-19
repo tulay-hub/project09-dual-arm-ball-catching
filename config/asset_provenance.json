@@ -1,0 +1,242 @@
+{
+  "copied_on": "2026-10-10",
+  "source_directory": "local_source/lkls73_o2_dual_arm_o6_description",
+  "snapshot_directory": "assets/lkls73_o2_dual_arm_o6_description",
+  "files": [
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "4116f6c4e255092b0c5414b67d92b2952920baa810bbe37e449f17818830f3d3",
+      "bytes": 195
+    },
+    {
+      "path": "README.md",
+      "sha256": "6204ef9ae87eae60a8bb19f87951aa337a6bfe0ad3b7850616708b7b11738412",
+      "bytes": 2367
+    },
+    {
+      "path": "meshes/arm/Base_Link.STL",
+      "sha256": "61dde1f9d58318d23e738d07693c0afe34a3e4bd4b2c12719dc5a75003cd4b22",
+      "bytes": 408484
+    },
+    {
+      "path": "meshes/arm/Left_Elbow_Pitch_Link.STL",
+      "sha256": "7983b2e0721d357b558627ddf8aec9c54199f9c30ae04cf542ad29d9d6ca45b9",
+      "bytes": 1641184
+    },
+    {
+      "path": "meshes/arm/Left_Shoulder_Base_Link.STL",
+      "sha256": "41e6c21097fa6ed16edcc3542002b1507dbf48a47e99553a72647562d17de16e",
+      "bytes": 66484
+    },
+    {
+      "path": "meshes/arm/Left_Shoulder_Pitch_Link.STL",
+      "sha256": "5193ee4094772f21fa45ee18f512b4ce25aae7e58ba60bca43d2d732c2ae3c25",
+      "bytes": 1867484
+    },
+    {
+      "path": "meshes/arm/Left_Shoulder_Roll_Link.STL",
+      "sha256": "597d5df4b89d34959bd299da9642567e83ac326f005c5d675f928225c76bc449",
+      "bytes": 80984
+    },
+    {
+      "path": "meshes/arm/Left_Shoulder_Yaw_Link.STL",
+      "sha256": "19f4d41a4e3a77e4848bc5bf6b19ec66ea45e9d33db5518a97915325174f66a6",
+      "bytes": 90084
+    },
+    {
+      "path": "meshes/arm/Left_Wrist_Pitch_Link.STL",
+      "sha256": "eeedfe6cf5f66304160a681b5956b9851bb0b8b6d62507ae0e56de1d4595e0f5",
+      "bytes": 42484
+    },
+    {
+      "path": "meshes/arm/Left_Wrist_Roll_Link.STL",
+      "sha256": "33231895528a2d8402586e095daf461a6ba5e57015a252c8677b9e37829cdfe0",
+      "bytes": 24984
+    },
+    {
+      "path": "meshes/arm/Left_Wrist_Yaw_Link.STL",
+      "sha256": "707cb24da0357e7d1d487dd1b1a86904f66b7f9ea5d226ff177188c2a816578d",
+      "bytes": 71484
+    },
+    {
+      "path": "meshes/arm/Right_Elbow_Pitch_Link.STL",
+      "sha256": "0f8b88f172fe2b10a3ca2a4c645a67ce140673d96223f8af8dbc60a9894f0a03",
+      "bytes": 1632984
+    },
+    {
+      "path": "meshes/arm/Right_Shoulder_Base_Link.STL",
+      "sha256": "934d42955227f5b9a729e536cdf9906af335fefa21d1cf057ad192d76ee68ff0",
+      "bytes": 66484
+    },
+    {
+      "path": "meshes/arm/Right_Shoulder_Pitch_Link.STL",
+      "sha256": "242b1eae5fb67890dc0bb6f1d2e8c5b9265ca8f2659e132bc1d37745efbb4470",
+      "bytes": 1867484
+    },
+    {
+      "path": "meshes/arm/Right_Shoulder_Roll_Link.STL",
+      "sha256": "15d02e3afe357f44e59481e192cc460b6eb8b8729e20a16d9d95e143d1307857",
+      "bytes": 72784
+    },
+    {
+      "path": "meshes/arm/Right_Shoulder_Yaw_Link.STL",
+      "sha256": "a4d011e3b45f8e363e99a6ff0394fd43841c6d26f33c22b34c4d325bad9bc059",
+      "bytes": 90084
+    },
+    {
+      "path": "meshes/arm/Right_Wrist_Pitch_Link.STL",
+      "sha256": "f0ab636cda61ed977afdde7074b2066ae62cdbf1e6541e46c3de039c35a1d5cb",
+      "bytes": 42484
+    },
+    {
+      "path": "meshes/arm/Right_Wrist_Roll_Link.STL",
+      "sha256": "52520d64a2ffa013ae6a0d28db688f33cab3c28161bb69c25abd80b54f67d0ab",
+      "bytes": 24984
+    },
+    {
+      "path": "meshes/arm/Right_Wrist_Yaw_Link.STL",
+      "sha256": "6329dd6540aa61b8011dab0cc1ed835970ffb46d979380ee9a68322e6820a730",
+      "bytes": 71484
+    },
+    {
+      "path": "meshes/left_hand/hand_base_link.STL",
+      "sha256": "2dc0d80eb470c0ccd6e338650f383efea75a5b77eee7e51d2b6a1da553afcdfe",
+      "bytes": 6296134
+    },
+    {
+      "path": "meshes/left_hand/index_distal.STL",
+      "sha256": "4f2699ea27c60f6c28a3ca0cae64ddab40b24b4929bbc23e112cbe08f7ae311c",
+      "bytes": 581734
+    },
+    {
+      "path": "meshes/left_hand/index_proximal.STL",
+      "sha256": "dd77da3a5c18d236c46c3adb51e7be8262e64926a0ee9e996741609d5ed0b08d",
+      "bytes": 640384
+    },
+    {
+      "path": "meshes/left_hand/middle_distal.STL",
+      "sha256": "b92ed1e3af1d6ef3389287a45c27433a1584a1233fcb0825ee48411b59299697",
+      "bytes": 581734
+    },
+    {
+      "path": "meshes/left_hand/middle_proximal.STL",
+      "sha256": "ed2daec64e98506a9fdd3e63708f5644c5d0660ef54c7711c83f15351fc8eb85",
+      "bytes": 640384
+    },
+    {
+      "path": "meshes/left_hand/pinky_distal.STL",
+      "sha256": "01a8db3f672c232cd3430c2314e1422cc14950c6f2e03606f9f4d20e66c30311",
+      "bytes": 581734
+    },
+    {
+      "path": "meshes/left_hand/pinky_proximal.STL",
+      "sha256": "8d0a3df9d46abe366d27132a49a45552031b57d1684fdf3adf7969a19faf6bf0",
+      "bytes": 640384
+    },
+    {
+      "path": "meshes/left_hand/ring_distal.STL",
+      "sha256": "a21ba5ccb885f939788ef701d99a94781d0001ffe2b43a3d79a32c376dab988b",
+      "bytes": 581734
+    },
+    {
+      "path": "meshes/left_hand/ring_proximal.STL",
+      "sha256": "d17d67b52a5f02d9ff5dbb0b7315fea055f0ee43a0f2443faf7df28942cf3663",
+      "bytes": 640384
+    },
+    {
+      "path": "meshes/left_hand/thumb_distal.STL",
+      "sha256": "baf3c1b16f94925bcd06768af7ec811de1a97d78f253d26adcd502d35067cf75",
+      "bytes": 823084
+    },
+    {
+      "path": "meshes/left_hand/thumb_metacarpals.STL",
+      "sha256": "c91dc63ccd81ca270d166e9e276665ea3fbe6bb42fbee31d1c7bb545b4238045",
+      "bytes": 1403784
+    },
+    {
+      "path": "meshes/left_hand/thumb_metacarpals_base2.STL",
+      "sha256": "9e8bd4b4adce43f74df492c1cd3890457b2ac0151c12582c5a8faaf6cdc9f1d9",
+      "bytes": 686384
+    },
+    {
+      "path": "meshes/right_hand/hand_base_link.STL",
+      "sha256": "f7fc8dae5d375e5a33251593c46f8b882c3a1aaafe89fa9544f0ef57d657f5de",
+      "bytes": 6341484
+    },
+    {
+      "path": "meshes/right_hand/index_distal.STL",
+      "sha256": "f07c23647d61bbc3e1c195fd94a726fa1a7828d128100ad49176af4c2364645f",
+      "bytes": 580434
+    },
+    {
+      "path": "meshes/right_hand/index_proximal.STL",
+      "sha256": "38c58f62b9911203069925c3d374703772927ffd3fa98049400fd75e66e7194a",
+      "bytes": 637984
+    },
+    {
+      "path": "meshes/right_hand/middle_distal.STL",
+      "sha256": "15d9e1daab1e75a1ce6808a64d37effd1f7cd179b9d1ecb44f3a4be70d0e186e",
+      "bytes": 580434
+    },
+    {
+      "path": "meshes/right_hand/middle_proximal.STL",
+      "sha256": "392519c735b9658d3417d793a00f6a0f655b8e8b0a64fdd096eb2bcb31a4de65",
+      "bytes": 637984
+    },
+    {
+      "path": "meshes/right_hand/pinky_distal.STL",
+      "sha256": "1b4b1c44dadd484bc3564ad622e0b7609c60eb8d76937b2a10c7d262cddc96e0",
+      "bytes": 580434
+    },
+    {
+      "path": "meshes/right_hand/pinky_proximal.STL",
+      "sha256": "50a1131fbead7bcf79ed1f435d4d799bd29f637ce81aa5220f31dc8b75a43777",
+      "bytes": 637984
+    },
+    {
+      "path": "meshes/right_hand/ring_distal.STL",
+      "sha256": "e6488d4c8d8a8aa2d857c51178472f50e398dac1a2552cf90d2cf08561ae69cf",
+      "bytes": 580434
+    },
+    {
+      "path": "meshes/right_hand/ring_proximal.STL",
+      "sha256": "e7485a837556d6c8a6101617bb113a625d65a878a00ac297b096d59b89629d5b",
+      "bytes": 637984
+    },
+    {
+      "path": "meshes/right_hand/thumb_distal.STL",
+      "sha256": "c3642be300b1ae3f7f5af071f5b1cfd4dec99e610e57e7bfe44a3b804886a360",
+      "bytes": 820784
+    },
+    {
+      "path": "meshes/right_hand/thumb_metacarpals.STL",
+      "sha256": "6bb54d668aea4f71251d48dc010897e08717b0cd13f63b304357fdc36894b897",
+      "bytes": 1403884
+    },
+    {
+      "path": "meshes/right_hand/thumb_metacarpals_base2.STL",
+      "sha256": "d92665c1cf3304617674cb4bc64cb20bc42ee49238043a427c222e32b4bdfe56",
+      "bytes": 680684
+    },
+    {
+      "path": "package.xml",
+      "sha256": "7fa1dda85effa2c63d62a3bd891ee70c96e94f948d249ad62b80940c9f48d48f",
+      "bytes": 450
+    },
+    {
+      "path": "preview.png",
+      "sha256": "560a492b204acd8df94a0205cbd916e68cf773be8e40d039562f123d99ffdb36",
+      "bytes": 414339
+    },
+    {
+      "path": "urdf/lkls73_o2_dual_arm_o6_description.urdf",
+      "sha256": "d26d4eaceb845a9d834f5dcc0ae58bcad81273caa1a14a697db28bbf7e7ecbe9",
+      "bytes": 49118
+    },
+    {
+      "path": "urdf/lkls73_o2_dual_arm_o6_description_portable.urdf",
+      "sha256": "41636993fa35f5e340047a90baaa13c154d995a5c1aab491efb9979108ece1bb",
+      "bytes": 45756
+    }
+  ]
+}
